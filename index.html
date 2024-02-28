@@ -26,16 +26,23 @@
             <legend>Informações Pessoais</legend>
           </div>
           <div class="input-wrapper">
-            <label for="event-name1"
-              >Nome <span>(minino 8 caracteres)</span></label
-            >
-            <input type="text" id="event-name1" />
+            <div id="col-1">
+              <label for="event-name1"
+                >Nome <span>(minino 8 caracteres)</span></label
+              >
+              <input type="text" id="event-name1" />
+
+              <div class="input-wrapper">
+                <label for="event-name2">Sobrenome</label>
+                <input type="text" id="event-name2" />
+              </div>
+            </div>
           </div>
 
-          <div class="input-wrapper">
+          <!-- <div class="input-wrapper">
             <label for="event-name2">Sobrenome</label>
             <input type="text" id="event-name2" />
-          </div>
+          </div> -->
 
           <div class="input-wrapper">
             <label for="event-email">E-mail</label>
@@ -67,14 +74,27 @@
           <div class="fielset-wrapper">
             <legend>Seus horários disponíveis</legend>
           </div>
-        </fieldset>
 
-        <subfieldset>
           <div class="fielset-wrapper-mentory">
-            <legend>Informações Pessoais</legend>
+            <legend-sub>PRIMEIRA MENTORIA</legend-sub>
+            <div id="col-2">
+              <div class="input-wrapper">
+                <label for="event-date">Data</label>
+                <input type="date" id="event-date" />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="event-begin">Das</label>
+                <input type="time" id="event-begin" />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="event-end">Até</label>
+                <input type="time" id="event-end" />
+              </div>
+            </div>
           </div>
-        </subfieldset>
-        
+        </fieldset>
       </form>
     </div>
   </body>

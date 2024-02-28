@@ -12,8 +12,10 @@
   --color-h1: #ffffff;
   --color-p: #ffffff;
   --color-form: #ffffff;
+  --border-form: #000000;
   --color-label: #4e4958;
   --color-label-span: #c1bccc;
+  --color-box: #f1f1f1;
 }
 
 .page {
@@ -84,15 +86,6 @@ fieldset {
   border: none;
 }
 
-subfieldset {
-  border: none;
-}
-
-subfieldset {
-  font-family: "Staatliches", sans-serif;
-}
-
-
 fieldset legend {
   font-family: "Staatliches", sans-serif;
   font-weight: 600;
@@ -101,8 +94,20 @@ fieldset legend {
 
   width: 100%;
 
+  color: var(--color-top);
+
   border-bottom: 1px solid var(--color-line-border);
   padding-bottom: 16px;
+}
+
+fieldset legend-sub {
+  font-family: "Staatliches", sans-serif;
+}
+.fielset-wrapper-mentory {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+  color: var(--color-top);
 }
 
 .fieldset-wrapper {
@@ -132,4 +137,28 @@ aqui é onde colocar os campos para digirar e o nome encima */
   line-height: 20px;
 
   color: var(--color-label-span);
+}
+
+#col-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+#col-2 {
+  display: flex;
+  gap: 32px;
+}
+
+.input-wrapper input {
+  background: var(--color-box);
+  border: 1px solid var(--color-line-border);
+  border-radius: 8px;
+
+  height: 56px;
+  padding: 0 24px;
+
+  font-size: 16px;
+  line-height: 26px;
+
+  color: var(--color-label);
 }
