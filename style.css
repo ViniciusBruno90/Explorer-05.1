@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-top: #535971;
+  --color-button: #ff5374;
+  --color-backgroud-body: #e5e5e5;
+  --color-line-border: #e6e6f0;
+  --color-h1: #ffffff;
+  --color-p: #ffffff;
+  --color-form: #ffffff;
+  --color-label: #4e4958;
+  --color-label-span: #c1bccc;
+}
+
+.page {
+  width: 736px;
+  margin: auto;
+}
+
+body,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--color-backgroud-body);
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  height: 368px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: var(--color-top);
+}
+
+header {
+  width: 319px;
+
+  margin-top: 140px;
+}
+
+header h1 {
+  font-family: "Staatliches", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: var(--color-h1);
+
+  margin-bottom: 18px;
+}
+
+header p {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 26px;
+
+  color: var(--color-p);
+}
+
+form {
+  margin-top: 38px;
+  background: var(--color-form);
+  border-radius: 8px;
+  min-height: 300px;
+
+  padding: 64px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+fieldset {
+  border: none;
+}
+
+subfieldset {
+  border: none;
+}
+
+subfieldset {
+  font-family: "Staatliches", sans-serif;
+}
+
+
+fieldset legend {
+  font-family: "Staatliches", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+
+  width: 100%;
+
+  border-bottom: 1px solid var(--color-line-border);
+  padding-bottom: 16px;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+/* 
+aqui é onde colocar os campos para digirar e o nome encima */
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  font-size: 14px;
+  line-height: 24px;
+
+  color: var(--color-label);
+
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  margin-left: 5px;
+  font-size: 12px;
+  line-height: 20px;
+
+  color: var(--color-label-span);
+}
