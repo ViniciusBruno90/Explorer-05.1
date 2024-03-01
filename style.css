@@ -110,13 +110,14 @@ fieldset legend-sub {
   color: var(--color-top);
 }
 
-.fielset-wrapper-information {
+/* .fielset-wrapper-information {
   display: flex;
+  width: 100%;
+
   flex-direction: column;
   margin-top: 18px;
   color: var(--color-top);
-  
-}
+} */
 
 .fieldset-wrapper {
   display: flex;
@@ -128,6 +129,8 @@ aqui é onde colocar os campos para digirar e o nome encima */
 .input-wrapper {
   display: flex;
   flex-direction: column;
+  /* width: 100% */
+  flex: auto;
 }
 
 .input-wrapper label {
@@ -147,13 +150,10 @@ aqui é onde colocar os campos para digirar e o nome encima */
   color: var(--color-label-span);
 }
 
-
-
 #col-1 {
   display: flex;
-  
+  gap: 32px;
 }
-
 
 #col-2 {
   display: flex;
