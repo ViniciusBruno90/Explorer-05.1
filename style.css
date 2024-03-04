@@ -16,6 +16,7 @@
   --color-label: #4e4958;
   --color-label-span: #c1bccc;
   --color-box: #f1f1f1;
+  --color-footer-hover: #df123b;
 }
 
 .page {
@@ -129,7 +130,7 @@ aqui é onde colocar os campos para digirar e o nome encima */
 .input-wrapper {
   display: flex;
   flex-direction: column;
-  /* width: 100% */
+  /* width: 100%; */
   flex: auto;
 }
 
@@ -139,6 +140,7 @@ aqui é onde colocar os campos para digirar e o nome encima */
 
   color: var(--color-label);
 
+  margin-top: 8px;
   margin-bottom: 8px;
 }
 
@@ -172,4 +174,42 @@ aqui é onde colocar os campos para digirar e o nome encima */
   line-height: 26px;
 
   color: var(--color-label);
+}
+
+footer {
+  background: var(--color-top);
+  height: 136px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px 64px;
+
+  margin-bottom: 100px;
+
+  border-top: 1px solid var(--color-label);
+  border-radius: 0 0 8px 8px;
+}
+
+footer .button {
+  height: 56px;
+  background: var(--color-button);
+  border: 0;
+  border-radius: 20px;
+
+  font-family: "Staatliches", sans-serif;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+
+  color: var(--color-p);
+}
+
+footer .button:hover {
+  background: var(--color-footer-hover);
+}
+
+input:invalid {
+  border: 1px solid var(--color-footer-hover);
 }
